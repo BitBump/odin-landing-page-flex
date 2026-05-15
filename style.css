@@ -6,6 +6,10 @@ body{
 
 }
 
+
+/*###############################################*/
+/*#-=HEADER=-####################################*/
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -110,9 +114,105 @@ img,.intro_image{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex: 1;
+    flex: 0 1 auto;
     gap: 10px;
 
 }
+/*###############################################*/
+/*###############################################*/
 
+/*###############################################*/
+/*#-=TOP=-#######################################*/
 
+.bordered_div{
+
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    border: 4px solid #3882f6;
+
+}
+
+#subtext{
+
+    color: #6f6f6f;
+    width: 200px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.cards_container{
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    margin-bottom: 130px;
+
+}
+
+.info_header{
+
+    color: #1f2937;
+    font-weight: 900;
+    font-size: 36px;
+
+    margin: 50px 0px 50px 0px;
+
+}
+
+.top{
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+}
+/*###############################################*/
+/*###############################################*/
+
+/*###############################################*/
+/*#-=MIDDLE=-####################################*/
+
+.middle{
+
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    padding: 150px 0px 100px 0px;
+
+}
+
+.signed_quote{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 790px;
+
+}
+
+#quote, #signature{
+
+    color: #1f2937;
+
+}
+
+#quote{
+
+    font-weight: 300;
+    font-size: 36px;
+
+}
+
+#signature{
+
+    font-weight: 700;
+    font-size: 25px;
+    align-self: flex-end;
+    padding-right: 35px;
+    
+}
