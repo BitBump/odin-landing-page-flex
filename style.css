@@ -1,35 +1,52 @@
+
+/*###############################################*/
+/*#-=PAGE WIDE=-#################################*/
+
+body, ul{
+
+    display: flex;
+
+}
+
+ul, a, p, h1{
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
 body{
 
     font-family: "Roboto", sans-serif;
     margin: 0px;
     min-height: 100vh;
 
+
+    flex-direction: column;
+    justify-content: center;
+
+    flex: 1 1 auto;
+
 }
 
-
-/*###############################################*/
-/*#-=HEADER=-####################################*/
-
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 
-    display: flex;
+    list-style-type: none;
     gap: 20px;
+
 }
 
 a {  
+
     text-decoration: none;
     font-size: 24px;
+
 }
 
 a, p{
 
     color: #E5E7EB;
     font-size: 18px;
-    padding: 0px;
-    margin: 0px;
 
 }
 
@@ -38,8 +55,6 @@ h1{
     color: #f9faf8;
     font-size: 48px;
     font-weight: 900;
-    padding: 0px;
-    margin: 0px;
 
 }
 
@@ -48,13 +63,12 @@ button{
     background-color: #3882f6;
     color: #f9faf8;
     font-weight: 700;
-    font-size: 18px;
-
-    border-radius: 8px;
-    border: 2px solid #3882f6;
+    font-size: 20px;
 
     width: 130px;
-    height: 35px;
+    height: 40px;
+
+    margin: 0px;
 
 }
 
@@ -66,15 +80,32 @@ img,.intro_image{
     margin: 0px;
 
 }
+/*###############################################*/
+/*###############################################*/
+
+
+/*###############################################*/
+/*#-=HEADER=-####################################*/
+
+.header, .logo_links, 
+.intro, .intro_message_button{
+
+    display: flex;
+
+}
+
+.logo_links, .intro{
+
+    justify-content: space-around;
+    align-items: center;
+
+}
 
 .header{
 
     background-color: #1f2937;
 
-    display: flex;
     flex-direction: column;
-    
-
 
 }
 
@@ -88,17 +119,13 @@ img,.intro_image{
 
 .logo_links{
 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     padding-top: 20px;
+
 }
 
 .intro{
 
-    display: flex;
-    justify-content: space-around;   
-    align-items: center; 
+    flex-wrap: wrap;
     padding-top: 150px;
     padding-bottom: 150px;
     padding-left: 300px;
@@ -111,11 +138,18 @@ img,.intro_image{
 .intro_message_button{
 
     width: 450px;
-    display: flex;
+
     flex-direction: column;
     flex-wrap: wrap;
     flex: 0 1 auto;
     gap: 10px;
+
+}
+
+.header_button{
+
+    border-radius: 8px;
+    border: 2px solid #3882f6;
 
 }
 /*###############################################*/
@@ -146,6 +180,8 @@ img,.intro_image{
 
     display: flex;
     justify-content: center;
+
+    flex-wrap: wrap;
     gap: 40px;
 
     margin-bottom: 130px;
@@ -169,6 +205,8 @@ img,.intro_image{
     justify-items: center;
     align-items: center;
 
+    flex: 1;
+
 }
 /*###############################################*/
 /*###############################################*/
@@ -183,6 +221,8 @@ img,.intro_image{
     justify-content: center;
     padding: 150px 0px 100px 0px;
 
+    flex: 1;
+
 }
 
 .signed_quote{
@@ -191,7 +231,9 @@ img,.intro_image{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     width: 790px;
+    
 
 }
 
@@ -215,4 +257,82 @@ img,.intro_image{
     align-self: flex-end;
     padding-right: 35px;
     
+}
+/*###############################################*/
+/*###############################################*/
+
+/*###############################################*/
+/*#-=BOTTOM=-####################################*/
+
+.bottom{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex: 1;
+
+}
+
+.bottom_container{
+
+    width: 1300px;
+    height: 200px;
+
+    background-color: #3882f6;
+    margin: 100px 0px 100px 0px;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+
+.action_call{
+
+    color: #E5E7EB;
+    font-size: 20px;
+
+}
+
+.call{
+
+    color: #f9faf8;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.bottom_button{
+
+    border-radius: 8px;
+    border: 3px solid  #f9faf8;
+
+}
+/*###############################################*/
+/*###############################################*/
+
+/*###############################################*/
+/*#-=FOOTER=-####################################*/
+
+.footer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex: 1 0 auto;
+
+    padding: 40px 0px 40px 0px;
+
+    background-color: #1f2937;
+
+}
+
+.copyright{
+
+    color: #E5E7EB;
+    font-size: 20px;
+
 }
