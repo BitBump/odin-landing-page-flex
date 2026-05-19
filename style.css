@@ -76,6 +76,7 @@ img,.intro_image{
 
     width: 700px;
     height: 300px;
+
     padding: 0px;
     margin: 0px;
 
@@ -101,17 +102,30 @@ img,.intro_image{
 
 }
 
+.header, 
+.intro_message_button{
+
+    flex-direction: column;
+
+}
+
+.intro,
+.intro_message_button{
+
+    flex-wrap: wrap;
+
+}
+
 .header{
 
     background-color: #1f2937;
-
-    flex-direction: column;
 
 }
 
 .logo{
 
     color: #f9faf8;
+
     font-size: 24px;
     font-weight: 700;
 
@@ -125,12 +139,10 @@ img,.intro_image{
 
 .intro{
 
-    flex-wrap: wrap;
     padding-top: 150px;
     padding-bottom: 150px;
     padding-left: 300px;
     padding-right: 300px;
-
     margin: 0px;
     
 }
@@ -139,8 +151,6 @@ img,.intro_image{
 
     width: 450px;
 
-    flex-direction: column;
-    flex-wrap: wrap;
     flex: 0 1 auto;
     gap: 10px;
 
@@ -158,10 +168,18 @@ img,.intro_image{
 /*###############################################*/
 /*#-=TOP=-#######################################*/
 
+.cards_container, .top{
+
+    display: flex;
+    justify-content: center;
+
+}
+
 .bordered_div{
 
     width: 200px;
     height: 200px;
+    
     border-radius: 20px;
     border: 4px solid #3882f6;
 
@@ -170,16 +188,16 @@ img,.intro_image{
 #subtext{
 
     color: #6f6f6f;
+
     width: 200px;
+
     text-align: center;
+
     margin-top: 10px;
 
 }
 
 .cards_container{
-
-    display: flex;
-    justify-content: center;
 
     flex-wrap: wrap;
     gap: 40px;
@@ -200,9 +218,7 @@ img,.intro_image{
 
 .top{
 
-    display: flex;
     flex-direction: column;
-    justify-items: center;
     align-items: center;
 
     flex: 1;
@@ -214,11 +230,17 @@ img,.intro_image{
 /*###############################################*/
 /*#-=MIDDLE=-####################################*/
 
+.middle, .signed_quote{
+
+    display: flex;
+    justify-content: center;
+
+}
+
 .middle{
 
     background-color: #E5E7EB;
-    display: flex;
-    justify-content: center;
+
     padding: 150px 0px 100px 0px;
 
     flex: 1;
@@ -227,13 +249,10 @@ img,.intro_image{
 
 .signed_quote{
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
     width: 790px;
-    
+
+    flex-direction: column;
+    align-items: center;    
 
 }
 
@@ -254,7 +273,9 @@ img,.intro_image{
 
     font-weight: 700;
     font-size: 25px;
+
     align-self: flex-end;
+
     padding-right: 35px;
     
 }
@@ -264,11 +285,18 @@ img,.intro_image{
 /*###############################################*/
 /*#-=BOTTOM=-####################################*/
 
-.bottom{
+
+.bottom, 
+.bottom_container{
 
     display: flex;
-    justify-content: center;
     align-items: center;
+
+}
+
+.bottom{
+
+    justify-content: center;
 
     flex: 1;
 
@@ -283,10 +311,7 @@ img,.intro_image{
     margin: 100px 0px 100px 0px;
     border-radius: 20px;
 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
+    justify-content: space-around;   
 
 }
 
@@ -318,15 +343,15 @@ img,.intro_image{
 
 .footer{
 
+    background-color: #1f2937;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
-    flex: 1 0 auto;
+    flex: 1 1 auto;
 
     padding: 40px 0px 40px 0px;
-
-    background-color: #1f2937;
 
 }
 
